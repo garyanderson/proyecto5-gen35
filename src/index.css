@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html {
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    margin: 0;
+}
+h1, h2, h3, p, ul, hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+input, button, select {
+    font-family: inherit;
+}

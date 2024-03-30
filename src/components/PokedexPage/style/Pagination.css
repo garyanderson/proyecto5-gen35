@@ -1,0 +1,19 @@
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.nav__pagin {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.nav__form {
+    margin-left: 3em;
+}
+.nav__label {
+
+}
+.nav__input {
+    width: 5em;
+}
