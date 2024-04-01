@@ -1,0 +1,64 @@
+.trainer {
+    color: red;
+}
+.pokedex__home__foot {
+    position:relative;
+    top: 0;
+    width: 100%;
+    height: 5.5em;
+    border: 1px solid black;
+    background-color: red;
+}
+.pokedex__circle {
+    position: absolute;
+    width: 5.5em;
+    height: 5.5em;
+    top: 1.5em;
+    left: 40%;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-right: 45%;
+    background-color: black;
+}
+.pokedex__circle__small {
+    position: absolute;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0.5em;
+    border: 0.7em solid white;
+}
+.pokedex__foot {
+    position: absolute;
+    width: 100%;
+    height: 2.5em;
+    bottom: 0;
+    border: 1px solid;
+    background-color: black;
+}
+.pokedex__img {
+    position: absolute;
+    width: 18em;
+    left: 15%;
+    top: 1em;
+}
+.pokedex_message, .trainer {
+    font-size: 1.2em;
+}
+.pokedex_message {
+    text-align: center;
+}
+.poke__form {
+}
+.home__input, .home__btn, .poke__select {
+    font-size: 1.4em;
+}
+.poke__options {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.poke__select {
+}

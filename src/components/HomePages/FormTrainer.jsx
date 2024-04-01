@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { setTrainer } from '../../store/states/trainer.silice'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import '../PokedexPage/style/HomePage.css'
 
 const FormTrainer = () => {    
 
@@ -18,9 +19,9 @@ const FormTrainer = () => {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
-        <input ref={trainerInput} type="text" />
-        <button>Lets start</button>
+    <form className='home__form' onSubmit={handleSubmit}>
+        <input className='home__input' ref={trainerInput} type="text" />
+        <button className='home__btn btn' >Let's go</button>
     </form>
   )
 }
