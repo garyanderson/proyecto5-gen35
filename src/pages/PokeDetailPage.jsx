@@ -31,14 +31,21 @@ const PokeDetailPage = () => {
         </header>
         <span className='detail_id'>#{pokemon?.id}</span>
         <section className='detail__dates'>
+          <div className='container_name'>
             <hr className='hr-name1'/>
             <h2 className='detail__name'>{pokemon?.name}</h2>
             <hr className='hr-name2'/>
-            <span className='detail__date1'>weight</span>
-            <span className='detail__date2'>height</span>
-            <br ></br>
-            <span className='detail__value1'>{pokemon?.weight}</span>
-           <span className='detail__value2'>{pokemon?.height}</span>
+          </div>            
+            <div className='container_dats'>
+              <div className='container_weight'> 
+                <p className='detail__date1'>weight</p>
+                <p className='detail__value1'>{pokemon?.weight}</p>
+              </div>
+              <div className='continer_height'>
+                <p className='detail__date2'>height</p>              
+                <p className='detail__value2'>{pokemon?.height}</p>
+              </div>              
+            </div>            
         </section>
         <div className='container'>
           <section className='detail__type'>

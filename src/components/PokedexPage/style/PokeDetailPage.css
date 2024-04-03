@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     border: 1px solid black;
@@ -51,11 +52,19 @@
     margin-bottom: 1em;
 }
 .detail__dates {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
     position: relative;
     width: 80%;
     height: 8em;
 }
+.container_name {
+    display: flex;
+}
 .detail__name {
+    position: relative;
     font-size: 2.8em;
     text-align: center;
 }
@@ -72,34 +81,31 @@
     right: 0;
     top: 25%;
 }
-.detail__date1 {
-    position: absolute;
-    top: 65%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    padding: 1px;
+.container_dats {
+    display: flex;
+    width: 50%;
+}
+.container_weight, .continer_height{
+    width: 50%;
+}
+.container_weight{
+
+}
+.continer_height{
+
+}
+.detail__date1, .detail__date2 {
+    text-align: center;
 }
 .detail__date2 {
-    position: absolute;
-    top: 65%;
-    right: 40%;
-    transform: translate(-50%, -50%);
-    padding: 1px;
+    
 }
 
-.detail__value1 {
-    position: absolute;
-    top: 90%;
-    left: 44%;
-    transform: translate(-50%, -50%);
-    padding: 1px;
+.detail__value1, .detail__value2 {
+    text-align: center;
 }
 .detail__value2 {
-    position: absolute;
-    top: 90%;
-    right: 44%;
-    transform: translate(-50%, -50%);
-    padding: 1px;
+    
 }
 .container {
     display: flex;

@@ -23,8 +23,10 @@ const Pagination = ({ setpage, page, setPages, pages, setCounter, counter, count
         setPages(next)
     }
     const handleEnd = () =>{
-        const end = (Math.ceil(1302 / page))*page
-        setPages(end)
+       const end = counter
+        countActual(end)
+        setPages(counter*page)
+        
     }
 
     const number_card = useRef(20)
@@ -33,16 +35,15 @@ const Pagination = ({ setpage, page, setPages, pages, setCounter, counter, count
         e.preventDefault()
         
         setpage(number_card.current.value)
-        if(!Number.isInteger(page)){
-            decimal = 1
+        if(!Number.isInteger(1302/page)){
+            setCounter(Math.floor(1302/page))
         }else{
-            decimal = 0
-        }         
-        setCounter(Math.ceil(1302/page)-decimal)
-        setPages(counter*page)      
-    }
+            setCounter(1302/page)
+        } 
+        handleStart()    
+      }
         
-    console.log(`${decimal}`)
+    console.log(`countActual: ${countActual} pages: ${pages} counter ${counter} page ${page}`)
       /*  const elementos = [];
     for (let x=0; x<pages; x++){
         elementos.push(<div className='numbers-pages btn' key={x}>{x+1}</div>)

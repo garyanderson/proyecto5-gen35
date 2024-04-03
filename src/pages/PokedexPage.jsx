@@ -13,7 +13,7 @@ const PokedexPage = () => {
   const [typeSelector, setTypeSelector] = useState('allPokemons')
   const [page, setpage] = useState(20)
   const [pages, setPages] = useState(0)
-  const [counter, setCounter] = useState(66)
+  const [counter, setCounter] = useState(65)
   const [countActual, setCountActual] = useState(0)
 
   const inputSearch = useRef()
