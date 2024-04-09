@@ -1,9 +1,10 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import useFetch from '../components/hooks/useFetch'
 import { useEffect } from 'react'
 import '../components/PokedexPage/style/PokeDetailPage.css'
 import '../components/PokedexPage/style/PokeCard.css'
 import title from'../../public/images/title.png'
+import PokedexPage from './PokedexPage'
 
 const PokeDetailPage = () => {
 
@@ -16,10 +17,15 @@ const PokeDetailPage = () => {
     getPokemon()
   }, [name])
 
+  
+    
+  
+
   console.log(pokemon)
 
   return (
     <div className='poke__detail'>
+      <Link to={'/pokedex'}>atras</Link> 
       <div className='pokedex__home__foot'>
         <div className='pokedex__foot'></div>
         <img className='pokedex__img' src={title} alt="" />
